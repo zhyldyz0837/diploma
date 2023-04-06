@@ -7,9 +7,16 @@ export default function Layout(props) {
       <header>
         <Nav></Nav>
       </header>
+      <aside>
+        ASIDE
+      </aside>
       <main>
         {props.children}
       </main>
+      <footer>
+        FOOTER
+      </footer>
+     
     </div>
   );
 }

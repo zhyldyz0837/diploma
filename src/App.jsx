@@ -1,4 +1,4 @@
-import { NavLink, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout/Layout"; 
 
 export default function App() {
@@ -11,7 +11,6 @@ export default function App() {
           <Route path="/contact" element={<h2>Contact</h2>} />
         </Routes>
       </Layout>
-      <main></main>
     </div>
   );
 }
