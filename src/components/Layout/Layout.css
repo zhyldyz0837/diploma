@@ -1,5 +1,5 @@
 .Layout {
-  max-width: 800px;
+  max-width:100%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -9,18 +9,15 @@
   flex-grow: 0;
   flex-shrink: 0;
   background-color: antiquewhite;
-
 }
 
 .Layout aside {
   flex: 20% 0 0;
   background-color: rgb(173, 133, 228);
-  
 }
 .Layout main {
-  flex:80% 1 1 ;
-  background-color:cadetblue;
-  
+  flex: 80% 1 1;
+  background-color: cadetblue;
 }
 .Layout footer {
   flex: 100% 0 0;
