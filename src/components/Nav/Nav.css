@@ -1,33 +1,11 @@
-ul {
+.Nav ul {
+  display: flex;
   list-style-type: none;
-  padding-left: 0;
-  margin-left: 500px;
+  margin: 0;
+  padding: 0;
 }
-ul a {
-  font-size: 20px;
-  text-decoration: none;
-  color: black;
-  background-color: azure;
-  margin: 10px 20px;
-  padding: 10px 15px;
-}
-ul li {
-  display: inline;
-}
-.navigation{
-  list-style-type: none;
-  padding-left: 0;
-  margin-left: 0px;
-}
-.navigation a{
-text-decoration: none;
-font-family: sans-serif;
-color: blue;
-display: inline-block;
-padding: 10px 15px;
-background-color: lavender;
-border-bottom: 5px solid tomato;
-}
-.navigation li{
-  display: inline;
+.Nav ul li a {
+  color: tomato;
+  padding: 10px;
+  display: block;
 }
