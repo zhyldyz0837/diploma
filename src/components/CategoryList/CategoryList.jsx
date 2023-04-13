@@ -5,7 +5,7 @@ import { AppContext } from "../../App";
 
 export default function CategoryList() {
   const { categories } = useContext(AppContext);
-  console.log(categories)
+
   const output = categories.map((category) => (
     <li key={category.id}>
       <NavLink to={"/category/" + category.path}>{category.name}</NavLink>
