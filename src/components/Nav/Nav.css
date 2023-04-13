@@ -5,7 +5,16 @@
   padding: 0;
 }
 .Nav ul li a {
-  color: tomato;
-  padding: 10px;
+  padding: 20px;
   display: block;
+  text-decoration: none;
+}
+.Nav a {
+  border-radius: 10px;
+  color: #40382d;
+  box-shadow: inset 0 -5px 0 #40382d;
+}
+.Nav a:hover {
+  box-shadow: inset 0 -60px 0 #40382d, 2px 2px 3px rgba(0, 0, 0, 0.3);
+  color: #decda5;
 }
