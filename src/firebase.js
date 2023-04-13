@@ -9,7 +9,7 @@ const firebaseConfig = {
   projectId: "diploma-38ac5",
   storageBucket: "diploma-38ac5.appspot.com",
   messagingSenderId: "87978906890",
-  appId: "1:87978906890:web:4f8c6660868ab6a3a596f3"
+  appId: "1:87978906890:web:4f8c6660868ab6a3a596f3",
 };
 
 // Initialize Firebase
@@ -18,3 +18,4 @@ const db = getFirestore(app);
 
 // получить список категорий (коллекция документов).
 export const categoryCollection = collection(db, "categories");
+export const productCollection = collection(db, "products");
