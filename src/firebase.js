@@ -1,20 +1,20 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection } from "firebase/firestore";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import { collection, getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCuJqWQUSgGlVCvogWbBZG9HfbcWRXVx4A",
-  authDomain: "diploma-38ac5.firebaseapp.com",
-  projectId: "diploma-38ac5",
-  storageBucket: "diploma-38ac5.appspot.com",
-  messagingSenderId: "87978906890",
-  appId: "1:87978906890:web:4f8c6660868ab6a3a596f3"
+  apiKey: "AIzaSyBrBPIGtAbKWPNWwFwwFI2_NuWo-JY5IIs",
+  authDomain: "diplom-6cfe2.firebaseapp.com",
+  projectId: "diplom-6cfe2",
+  storageBucket: "diplom-6cfe2.appspot.com",
+  messagingSenderId: "104898799547",
+  appId: "1:104898799547:web:2b5d6221ef0f3b7b90069e",
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
-export default collection(db, 'categories');
+
+// получить список категорий (коллекция документов).
+export const categoryCollection = collection(db, "categories");
