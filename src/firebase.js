@@ -4,12 +4,12 @@ import { collection, getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBrBPIGtAbKWPNWwFwwFI2_NuWo-JY5IIs",
-  authDomain: "diplom-6cfe2.firebaseapp.com",
-  projectId: "diplom-6cfe2",
-  storageBucket: "diplom-6cfe2.appspot.com",
-  messagingSenderId: "104898799547",
-  appId: "1:104898799547:web:2b5d6221ef0f3b7b90069e",
+  apiKey: "AIzaSyCuJqWQUSgGlVCvogWbBZG9HfbcWRXVx4A",
+  authDomain: "diploma-38ac5.firebaseapp.com",
+  projectId: "diploma-38ac5",
+  storageBucket: "diploma-38ac5.appspot.com",
+  messagingSenderId: "87978906890",
+  appId: "1:87978906890:web:4f8c6660868ab6a3a596f3"
 };
 
 // Initialize Firebase
