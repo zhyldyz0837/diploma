@@ -8,15 +8,24 @@ import { createContext, useEffect, useState } from "react";
 import { categoryCollection, productCollection } from "./firebase";
 import { getDocs } from "firebase/firestore";
 import Category from "./pages/Category";
+import Cart from "./pages/Cart";
 
 export const AppContext = createContext({
   categories: [],
   products: [],
+
+  //karzina
+  cart: {},
+  setCart: () => {},
 });
 
 export default function App() {
   const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
+
+  //karzina
+  const [cart, setCart] = useState({});
+
   // выполнить эту функцию только один раз
   useEffect(() => {
     // получить категории из списка категорий
@@ -37,7 +46,6 @@ export default function App() {
       setCategories(newCategories);
     });
 
-    
     // получить  продукты из списка продуктов
     getDocs(productCollection).then((snapshot) => {
       // категории будут храниться в snapshot.docs
@@ -46,7 +54,6 @@ export default function App() {
       const newProducts = [];
       // заполнить массив данными из списка  продуктов
       snapshot.docs.forEach((doc) => {
-      
         const product = doc.data();
         product.id = doc.id;
 
@@ -57,10 +64,9 @@ export default function App() {
     });
   }, []);
 
-
   return (
     <div className="App">
-      <AppContext.Provider value={{ categories, products }}>
+      <AppContext.Provider value={{ categories, products, cart, setCart }}>
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -68,6 +74,7 @@ export default function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/delivery" element={<Delivery />} />
             <Route path="/category/:path" element={<Category />} />
+            <Route path="/cart" element={<Cart />} />
           </Routes>
         </Layout>
       </AppContext.Provider>
