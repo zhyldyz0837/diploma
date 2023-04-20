@@ -6,4 +6,11 @@
 .ProductList .Product img {
   width: 200px;
   height: 250px;
+  padding: 5px 10px;
+}
+span {
+  color: rgb(67, 32, 193);
+  margin: 15px 20px;
+  background-color: aliceblue;
+  text-align: center;
 }
