@@ -9,6 +9,7 @@ import { categoryCollection, productCollection } from "./firebase";
 import { getDocs } from "firebase/firestore";
 import Category from "./pages/Category";
 import Cart from "./pages/Cart";
+import NotFound from "./pages/NotFound";
 
 export const AppContext = createContext({
   categories: [],
@@ -24,7 +25,16 @@ export default function App() {
   const [products, setProducts] = useState([]);
 
   //karzina
-  const [cart, setCart] = useState({});
+  const [cart, setCart] = useState(() => {
+    // востоновить содержимое корзинки из память браузера.
+    return JSON.parse(localStorage.getItem("cart")) || {};
+  });
+
+  // выполнить эту функцию только когда содержимое корзинки меняется
+  useEffect(() => {
+    // сохранит содержимое корзинки в памяти браузера
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }, [cart]);
 
   // выполнить эту функцию только один раз
   useEffect(() => {
@@ -75,6 +85,8 @@ export default function App() {
             <Route path="/delivery" element={<Delivery />} />
             <Route path="/category/:path" element={<Category />} />
             <Route path="/cart" element={<Cart />} />
+
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>
       </AppContext.Provider>
