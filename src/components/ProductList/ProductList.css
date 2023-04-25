@@ -1,16 +1,24 @@
 .ProductList .Product {
   display: inline-flex;
   flex-direction: column;
-  max-width: 200px;
 }
 .ProductList .Product img {
-  width: 200px;
-  height: 250px;
+  width: 250px;
+  height: 300px;
   padding: 5px 10px;
 }
 span {
   color: rgb(67, 32, 193);
-  margin: 15px 20px;
+  margin: 20px 25px;
   background-color: aliceblue;
   text-align: center;
+}
+.Product a {
+  max-width: 80%;
+  text-align: center;
+  text-decoration: none;
+}
+img:hover {
+  box-shadow: 1px 1px 1px 5px rgb(9, 9, 225);
+  transform: scale(1, 1.1);
 }
