@@ -18,7 +18,7 @@ span {
   text-align: center;
   text-decoration: none;
 }
-img:hover {
+.Product img:hover {
   box-shadow: 1px 1px 1px 5px rgb(9, 9, 225);
   transform: scale(1, 1.1);
 }

@@ -8,17 +8,21 @@ import {
   categoryCollection,
   onAuthChange,
   productCollection,
+  orderCollection
 } from "./firebase";
 import Cart from "./pages/Cart";
 import NotFound from "./pages/NotFound";
 import Product from "./pages/Product";
+import Orders from "./components/OrderList/OrderList";
 
 export const AppContext = createContext({
   categories: [],
   products: [],
+  orders: [],
 
   // корзина
   cart: {},
+
   setCart: () => {},
 
   user: null, // здесь будет храниться информация про пользователя
@@ -27,6 +31,7 @@ export const AppContext = createContext({
 export default function App() {
   const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
+  const [orders, setOrders] = useState([]);
 
   // состояние которое хранит информацию пользователя
   const [user, setUser] = useState(null);
@@ -81,6 +86,29 @@ export default function App() {
       setProducts(newProducts);
     });
 
+
+
+    // получить продукты из списка продуктов
+    getDocs(orderCollection).then((snapshot) => {
+      // продукты будут храниться в snapshot.docs
+
+      // создать массив для продуктов
+      const newOrders = [];
+      // заполнить массив данными из списка продвук
+      snapshot.docs.forEach((doc) => {
+        // doc = продукт
+        const order = doc.data();
+        order.id = doc.id;
+
+        newOrders.push(order);
+      });
+      // задать новый массив как состояние комапо
+      setOrders(newOrders);
+    });
+
+
+
+
     onAuthChange((user) => {
       setUser(user);
     });
@@ -89,7 +117,7 @@ export default function App() {
   return (
     <div className="App">
       <AppContext.Provider
-        value={{ categories, products, cart, setCart, user }}
+        value={{ categories, products, cart, setCart, user, orders }}
       >
         <Layout>
           <Routes>
@@ -98,6 +126,7 @@ export default function App() {
             <Route path="/category/:path" element={<Category />} />
             <Route path="/product/:path" element={<Product />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path="/orders" element={<Orders />} />
 
             <Route path="*" element={<NotFound />} />
           </Routes>
