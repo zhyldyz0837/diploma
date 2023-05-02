@@ -13,7 +13,7 @@ export default function ProductList({ category }) {
       <div className="Product" key={product.id}>
         <img src={product.picture} alt={product.name} />
         <Link to={"/product/" + product.path}>{product.name}</Link>
-        <span>{product.price} som</span>
+        <span>{product.price} $ </span>
         <AddToCart product={product} />
       </div>
     ));
