@@ -9,15 +9,13 @@
   flex-basis: 100%;
   flex-grow: 0;
   flex-shrink: 0;
-  background-color: antiquewhite;
+  background-color: rgb(239, 166, 71);
 }
 .Layout aside {
   flex: 20% 0 0;
-  background-color: azure;
 }
 .Layout main {
   flex: 80% 1 1;
-  background-color: rgb(168, 160, 255);
   height: 1000px;
 }
 .Layout footer {
