@@ -3,8 +3,8 @@
   flex-direction: column;
 }
 .ProductList .Product img {
-  width: 250px;
-  height: 300px;
+  width: 300px;
+  height: 350px;
   padding: 5px 10px;
 }
 span {
@@ -19,6 +19,6 @@ span {
   text-decoration: none;
 }
 .Product img:hover {
-  box-shadow: 1px 1px 1px 5px rgb(9, 9, 225);
+  box-shadow: 1px 1px 1px 5px rgb(17, 17, 19);
   transform: scale(1, 1.1);
 }
