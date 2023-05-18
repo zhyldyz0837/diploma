@@ -1,6 +1,6 @@
-*{
-  box-sizing: border-box;
+.Home .home-img {
+  position: absolute;
 }
-body {
-  margin: 0;
+.Home .home-text {
+  position: relative;
 }

@@ -1,15 +1,17 @@
 .Nav ul {
   display: flex;
   list-style-type: none;
-  margin: 5px;
-  padding-left: 120px;
+  margin: 0;
+  padding: 0;
 }
 .Nav ul li a {
-  padding: 20px;
+  color: #7b241c;
   display: block;
+  padding: 15px;
+  margin-left: 55px;
+  font-weight: 700;
   text-decoration: none;
-  width: 250px;
-  text-align: center;
+  font-size: 15px;
 }
 .Nav a {
   border-radius: 10px;
@@ -22,3 +24,12 @@
   box-shadow: inset 0 -60px 0 #5d0234, 2px 2px 3px rgba(0, 0, 0, 0.3);
   color: #eee7e9;
 }
+.Nav ul li a:focus {
+  color: rgb(235, 230, 230);
+  background-color: #5d0234;
+  border-radius: 10px;
+  -webkit-transition: ease-out 0.5s;
+  -moz-transition: ease-out 0.2s;
+  transition: ease-out 0.5s;
+}
+

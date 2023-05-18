@@ -6,6 +6,7 @@ import { AppContext } from "../../App";
 const AddCategory = () => {
   const { user } = useContext(AppContext);
   const [category, setCategory] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   if (!user || !user.isAdmin) {
     return null;
@@ -26,12 +27,18 @@ const AddCategory = () => {
       return;
     }
 
+    setIsSubmitting(true);
+
     addDoc(categoryCollection, {
       name: name,
-      slug: name.replaceAll(" ", "-").toLocaleLowerCase(),
-    }).then(() => {
-      setCategory("");
-    });
+      path: name.replaceAll(" ", "-").toLocaleLowerCase(),
+    })
+      .then(() => {
+        setCategory("");
+      })
+      .finally(() => {
+        setIsSubmitting(false);
+      });
   }
 
   return (
@@ -43,7 +50,9 @@ const AddCategory = () => {
         placeholder="Category name"
         onChange={onChangeCategory}
       />
-      <button onClick={onAddCategory}>+</button>
+      <button onClick={onAddCategory} disabled={isSubmitting}>
+        +
+      </button>
     </div>
   );
 };
