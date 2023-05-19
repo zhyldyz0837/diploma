@@ -25,3 +25,11 @@ body {
 .Home .home-header .home-header-img img:hover {
   transform: scale(1.2);
 }
+.Home .home-header-text {
+  color: rgba(69, 3, 3, 0.629);
+  text-align: center;
+}
+.Home .home-header .home-header-text h1:hover {
+  transform: scale(1.2);
+  color: rgba(69, 3, 3, 0.874);
+}
