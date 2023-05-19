@@ -26,3 +26,13 @@ span {
   box-shadow: 1px 1px 1px 5px rgb(17, 17, 19);
   transition: calc(1 1 1);
 }
+.Product {
+  color: rgba(104, 2, 2, 0.879);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.Product img {
+  width: 300px;
+  margin-left: 330px;
+}
