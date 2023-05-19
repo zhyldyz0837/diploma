@@ -6,17 +6,21 @@
   width: 300px;
   height: 350px;
   padding: 5px 10px;
+  margin: 10px;
 }
 span {
-  color: rgb(67, 32, 193);
+  color: brown;
   margin: 20px 25px;
   background-color: aliceblue;
   text-align: center;
 }
 .Product a {
-  max-width: 80%;
+  max-width: 85%;
   text-align: center;
   text-decoration: none;
+  color: rgb(86, 4, 4);
+  font-size: 20px;
+  margin-left: 20px;
 }
 .Product img:hover {
   box-shadow: 1px 1px 1px 5px rgb(17, 17, 19);
