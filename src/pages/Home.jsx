@@ -9,10 +9,9 @@ export default function Home() {
           />
         </div>
         <div class="home-header-text">
-          <h1>welcome to my candy shop</h1>
+          <h1>Welcome to my candy shop!</h1>
         </div>
       </div>
     </div>
   );
 }
-
