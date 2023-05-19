@@ -7,19 +7,18 @@ import "./Layout.css";
 
 export default function Layout(props) {
   return (
-      <div className="Layout">
-        <header>
-          <Logo />
-          <CartLink />
-          <Auth />
-          <Nav />
-        </header>
-        <aside>
-          <CategoryList />
-        </aside>
-        <main>{props.children}</main>
-        <footer>FOOTER</footer>
-      </div>
-   
+    <div className="Layout">
+      <header>
+        <Logo />
+        <CartLink />
+        <Auth />
+        <Nav />
+      </header>
+      <aside>
+        <CategoryList />
+      </aside>
+      <main>{props.children}</main>
+      <footer>FOOTER</footer>
+    </div>
   );
 }

@@ -17,9 +17,6 @@ export default function Nav() {
         <li>
           <NavLink to="/delivery">Delivery</NavLink>
         </li>
-        <li>
-          <NavLink to="/adress">Adrees</NavLink>
-        </li>
       </ul>
     </nav>
   );

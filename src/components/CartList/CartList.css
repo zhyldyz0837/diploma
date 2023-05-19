@@ -1,9 +1,13 @@
 .CartList {
-  display: flex;
-  align-items: center;
+  display: inline-block;
 }
 
 .CartList .CartItem img {
-  width: 80px;
-  
+  width: 100px;
+  height: 150px;
+}
+.CartList .CartItem a {
+  color: rgb(120, 60, 14);
+  text-decoration: none;
+  margin: 10px 15px;
 }
