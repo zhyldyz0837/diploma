@@ -14,6 +14,8 @@ import NotFound from "./pages/NotFound";
 import Product from "./pages/Product";
 import Orders from "./components/OrderList/OrderList";
 import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Delivery from "./pages/Delivery";
 
 export const AppContext = createContext({
   categories: [],
@@ -69,7 +71,8 @@ export default function App() {
             <Route path="/product/:path" element={<Product />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/orders" element={<Orders />} />
-
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/delivery" element={<Delivery />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>
