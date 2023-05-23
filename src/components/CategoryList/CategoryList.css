@@ -1,6 +1,7 @@
 .CategoryList {
-  color: blue;
+  color: rgb(235, 235, 244);
 }
 .CategoryList a {
   text-decoration: none;
+  
 }
