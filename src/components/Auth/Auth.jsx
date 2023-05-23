@@ -10,16 +10,17 @@ export default function Auth() {
   // показывается гостю
   let output = (
     <span>
-      Guest <button onClick={logIn}>Sign in</button>
+      Guest <button className="sing-btn" onClick={logIn}>Sign in</button>
     </span>
   );
   // показывается пользователю
   if (user) {
     output = (
+      
       <span>
-        <Link to="/orders">{user.displayName}</Link>
+      <div className="sing">
+        <button className="sing-btn" onClick={logOut}>Sign out</button>  <Link to="/orders">{user.displayName}</Link></div>
 
-        <button onClick={logOut}>Sign out</button>
       </span>
     );
   }

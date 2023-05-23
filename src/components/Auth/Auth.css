@@ -1,0 +1,13 @@
+.sing-btn {
+  border-radius: 30%;
+  height: 30px;
+  width: 100px;
+}
+.Auth .sing {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+span {
+  text-align: center;
+}
