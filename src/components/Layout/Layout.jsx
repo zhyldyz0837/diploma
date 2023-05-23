@@ -13,10 +13,9 @@ export default function Layout(props) {
         <Nav />
         <Auth />
         <CartLink />
-      
-        
       </header>
       <aside>
+        <h1 className="Categories-h1">Categories</h1>
         <CategoryList />
       </aside>
       <main>{props.children}</main>
