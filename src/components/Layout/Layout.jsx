@@ -10,9 +10,11 @@ export default function Layout(props) {
     <div className="Layout">
       <header>
         <Logo />
-        <CartLink />
-        <Auth />
         <Nav />
+        <Auth />
+        <CartLink />
+      
+        
       </header>
       <aside>
         <CategoryList />

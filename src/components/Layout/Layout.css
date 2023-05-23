@@ -10,10 +10,14 @@
   flex-basis: 80%;
   flex-grow: 0;
   flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 .Layout aside {
   flex: 20% 0 0;
-  background-color: aliceblue;
+  background-color: rgb(191, 156, 121);
+  border-radius: 5px;
 }
 .Layout main {
   flex: 60% 1 1;
