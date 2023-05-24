@@ -5,7 +5,7 @@
 .ProductList .Product img {
   width: 300px;
   height: 350px;
-  padding: 5px 10px;
+  padding: 10px 10px;
   margin: 2px;
 
   border-radius: 15px;
@@ -18,24 +18,20 @@
   font-size: 20px;
   margin-left: 20px;
 }
-.Product img:hover {
-  box-shadow: 1px 1px 1px 5px rgb(17, 17, 19);
-  transition: calc(1 1 1);
-}
 .Product {
-      align-items: flex-start;
-      background-color: #f9f9f9;
-      border: 1px solid #000;
-      border-radius: 10px;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      margin-bottom: 30px;
-      margin-right: 20px;
-      padding: 10px;
-      transition: 2s;
-      width: 320px;
-  }
+  align-items: flex-start;
+  background-color: #f9f9f9;
+  border: 1px solid #000;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  padding: 10px;
+  transition: 2s;
+  width: 320px;
+}
 
 .Product img {
   width: 300px;
