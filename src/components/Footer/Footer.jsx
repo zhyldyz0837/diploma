@@ -29,7 +29,6 @@ function Footer() {
         <div className="footer-column">
           <h4 className="footer-heading">Contact</h4>
           <p>Esenina</p>
-          <p></p>
           <p>Phone: +996999263339</p>
           <p>Email: zhyldyzbazarkulova467@gmail.com</p>
         </div>
