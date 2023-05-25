@@ -35,5 +35,8 @@
 
 .Product img {
   width: 300px;
-  margin-left: 330px;
+}
+.Product{
+  margin-left: 40px;
+  margin-top: 20px;
 }

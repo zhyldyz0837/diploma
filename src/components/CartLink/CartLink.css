@@ -14,3 +14,15 @@
   position: relative;
   margin-left: 15px;
 }
+
+.CartList .CartItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial;
+    font-weight: 600;
+    margin-bottom: 25px;
+    background-color: #ffffff56;
+    padding: 10px 50px;
+    margin: 10px 10px   ;
+}

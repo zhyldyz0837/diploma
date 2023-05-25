@@ -3,6 +3,15 @@
   
 }
 .CategoryList a {
+  color: #fff;
+  transition: .3s;
   text-decoration: none;
-  
+}
+.CategoryList ul li {
+  text-align: start;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  color: #fbfbfb;
+  font-size: 18px;
 }

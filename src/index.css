@@ -75,3 +75,23 @@ body {
  box-shadow: 3px 5px 7px  black;
  background-color: aliceblue;
 }
+
+.Delivery-p {
+  padding: 10px 10px;
+  margin: 10px 10px;
+  font-size: 20px;
+  box-shadow: 4px 1px black;
+}
+
+
+
+.Delivery-text:hover {
+  cursor: pointer;
+  color: rgba(59, 2, 2, 0.568);
+}
+
+
+.about-h3:hover {
+  cursor: pointer;
+  color: rgba(59, 2, 2, 0.568);
+}
