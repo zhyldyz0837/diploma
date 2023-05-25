@@ -3,3 +3,32 @@
   flex-direction: column;
   align-items: center;
 }
+.OrderForm {
+  margin-bottom: 30px;
+}
+.OrderForm label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.OrderForm input {
+  padding: 0 10px;
+  line-height: 20px;
+}
+
+.OrderForm button {
+  border: 3px solid #7b241c;
+  color: #7b241c;
+  cursor: pointer;
+  width: 80px;
+  text-align: center;
+  background: antiquewhite;
+  transition: 0.3s;
+  width: 150px;
+  border-radius: 5px;
+  line-height: 35px;
+}
+.OrderForm button:hover {
+  background: #7b241c;
+  color: #fff;
+}

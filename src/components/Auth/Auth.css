@@ -5,13 +5,32 @@
 }
 .Auth .sing {
   display: inline-flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: space-between;
+  align-items: center;
 }
-span {
+.Auth span {
+  text-align: right;
+}
+.img-1 {
+  width: 100px;
+}
+
+.sing a {
+  color: #7b241c;
+  text-decoration: none;
+  padding-right: 10px;
+}
+.sing-btn {
+  border: 3px solid #7b241c;
+  color: #7b241c;
+  cursor: pointer;
+  width: 80px;
   text-align: center;
-  margin-left: 140px;
+  background: antiquewhite;
+  transition: 0.3s;
 }
-.img-1{
-width: 100px;
+.sing-btn:hover{
+  background: #7b241c;
+  color: #fff;
 }

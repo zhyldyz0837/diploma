@@ -7,7 +7,8 @@
   background-color: antiquewhite;
 }
 .Layout header {
-  flex-basis: 80%;
+  flex-basis: 100%;
+  padding-right: 15px;
   flex-grow: 0;
   flex-shrink: 0;
   display: flex;
@@ -18,13 +19,14 @@
   flex: 20% 0 0;
   background-color: rgb(191, 156, 121);
   border-radius: 5px;
+  margin-top: 30px;
 }
 .Layout main {
   flex: 60% 1 1;
-  height: 1900px;
+  min-height: 600px;
 }
 .Layout footer {
-  flex: 80% 0 0;
+  flex: 100% 0 0;
 }
 .Categories-h1 {
   color: rgba(66, 3, 3, 0.875);

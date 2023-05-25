@@ -3,26 +3,33 @@
   width: 30px;
   height: 30px;
   position: absolute;
-  top: 0;
+  top: -6px;
   left: 0;
-  background-image:url(https://cdn-icons-png.flaticon.com/512/419/419910.png);
+  background-image: url(https://cdn-icons-png.flaticon.com/512/419/419910.png);
   background-size: cover;
 }
 .CartLink a {
   display: inline-block;
-  padding-left: 50px;
+  padding-left: 40px;
   position: relative;
-  margin-left: 15px;
+  color: #000;
 }
 
 .CartList .CartItem {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    font-family: Roboto,Helvetica Neue,Helvetica,Arial;
-    font-weight: 600;
-    margin-bottom: 25px;
-    background-color: #ffffff56;
-    padding: 10px 50px;
-    margin: 10px 10px   ;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: Roboto, Helvetica Neue, Helvetica, Arial;
+  font-weight: 600;
+  margin-bottom: 25px;
+  background-color: #ffffff56;
+  padding: 10px 50px;
+  margin: 10px 10px;
+}
+
+.CartList {
+  width: 100%;
+}
+.CartItem input {
+  width: 50px;
 }
