@@ -12,6 +12,7 @@ export default function About() {
           toppings, confectionery equipment and much more to create
           confectionery masterpieces.
         </p>
+      <img src="https://i.pinimg.com/564x/0e/99/1e/0e991e651cba6768bec4bee716d0f7b3.jpg"></img>
       </div>
     </div>
   );
