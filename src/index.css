@@ -3,6 +3,7 @@
 }
 body {
   margin: 0;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJye9mGoTmyziHA0fKhwKwwg_Cmvx4V-F00rkBKwQ4FxKndrn0hlKXGnBKVSNU7ZLE5MU&usqp=CAU);
 }
 .container {
   flex-wrap: wrap;
