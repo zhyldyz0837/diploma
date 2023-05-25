@@ -15,3 +15,7 @@
   color: #fbfbfb;
   font-size: 18px;
 }
+
+.CategoryList ul li :hover {
+  color: rgba(87, 4, 4, 0.659);
+}
