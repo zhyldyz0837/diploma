@@ -14,8 +14,13 @@
   border-radius: 5px;
   color: #fbfbfb;
   font-size: 18px;
+  padding: 10px;
+
 }
 
 .CategoryList ul li :hover {
+  background-color: #fbfbfb;
   color: rgba(87, 4, 4, 0.659);
+  padding: 10px;
+  border-radius: 5px;
 }
