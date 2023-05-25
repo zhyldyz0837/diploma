@@ -66,14 +66,14 @@ body {
   font-size: 30px;
   text-align: center;
 }
-.about-p{
+.about-p {
   text-align: center;
- flex-wrap: wrap;
- margin: 40px 20px 10px;
- padding: 10px 10px;
- font-size: 18px;
- box-shadow: 3px 5px 7px  black;
- background-color: aliceblue;
+  flex-wrap: wrap;
+  margin: 40px 20px 10px;
+  padding: 10px 10px;
+  font-size: 18px;
+  box-shadow: 3px 5px 7px black;
+  background-color: aliceblue;
 }
 
 .Delivery-p {
@@ -83,15 +83,25 @@ body {
   box-shadow: 4px 1px black;
 }
 
-
-
 .Delivery-text:hover {
   cursor: pointer;
   color: rgba(59, 2, 2, 0.568);
 }
 
-
 .about-h3:hover {
   cursor: pointer;
   color: rgba(59, 2, 2, 0.568);
+}
+.Contact {
+  padding: 0 15px;
+}
+.Contact a {
+  display: inline-block;
+  margin-bottom: 20px;
+  transition: 0.3s;
+  text-decoration: none;
+  font-weight: 600;
+}
+.Contact a:hover {
+  color: #7b241c;
 }
